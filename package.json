@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "husky"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -22,11 +22,23 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
   },
   "volta": {
     "node": "21.6.2",
     "yarn": "4.1.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn prettier --write",
+      "yarn eslint"
+    ],
+    "*.css": "yarn prettier --write",
+    "*.json": "yarn prettier --write",
+    "*.html": "yarn prettier --write"
   }
 }
