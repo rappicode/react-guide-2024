@@ -4,3 +4,4 @@ This repository tracks the progress of the "An Opinionated React Guide 2024" ser
 
 - [Project Setup](https://medium.com/@rappicode/an-opinionated-react-guide-2024-project-setup-a8bed8571c05)
 - [Formatting and Linting](https://medium.com/@rappicode/an-opinionated-react-guide-2024-formatting-and-linting-f38eafbe0595)
+- [Visual Studio Code](https://medium.com/@rappicode/an-opinionated-react-guide-2024-visual-studio-code-30ff0067d365)
