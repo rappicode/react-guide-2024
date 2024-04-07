@@ -1,5 +1,12 @@
+import { RouterProvider, createRouter } from "@tanstack/react-router";
+import { routeTree } from "./routeTree.gen";
+
+const router = createRouter({
+  routeTree: routeTree,
+});
+
 function App() {
-  return <div className="text-3xl font-bold underline">test</div>;
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
